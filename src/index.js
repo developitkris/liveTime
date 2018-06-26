@@ -1,10 +1,10 @@
 function liveTime(){
-  var greeting = React.CreateElement('h1', {}, 'Hello World');
-  var clock = React.CreateElement('h2', {}), `It is ${new Date().toLocaleTimeString()} right now`);
-  var app = React.CreateElement('div', {}, greeting, clock);
+  var greeting = React.createElement('h1', {}, 'Hello World!');
+  var clock = React.createElement('h2', {}, `It is ${new Date().toLocaleTimeString()} right now`);
+  var app = React.createElement('div', {}, greeting, clock);
 
 ReactDOM.render(
-  greeting,
+  app,
   document.getElementById('react-app-root')
 );
 }
